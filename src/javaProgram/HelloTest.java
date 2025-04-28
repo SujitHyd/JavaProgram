@@ -8,6 +8,7 @@ public class HelloTest {
 		
 		System.out.println("Hello world");
 		System.out.println("Hello Java Restart my Career");
+		System.out.println(17/2);
 
 	}
 
