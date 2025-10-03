@@ -1,0 +1,27 @@
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        long num = 1234567897864L;
+        int even_count=0;
+        int odd_count=0;
+        int sum = 0;
+        while (num>0)
+        {
+            int rem=(int)(num%10);
+        if(rem%2==0)
+        {
+            even_count++;
+            sum = sum + rem;
+            
+        }
+        else
+        {
+            odd_count++;
+            
+        }
+        num = num/10;
+    }
+    System.out.println("Even num count : " + even_count + " and the addition : " + sum);
+    System.out.println("Odd num count : " + odd_count);
+}
+}

@@ -1,0 +1,23 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Main {
+    public static void charCount(String name){
+        String value = name.toLowerCase();
+        Map<Character,Integer> hashCount = new HashMap<Character,Integer>();
+        char[] charArray = value.toCharArray();
+        for(char a : charArray){
+            if(hashCount.containsKey(a)){
+                hashCount.put(a,hashCount.get(a)+1);
+            }
+            else{
+                hashCount.put(a,1);
+            }
+        }
+        System.out.println(name + ":" + hashCount);
+    }
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        charCount("Welcome to L & T");
+    }
+}
