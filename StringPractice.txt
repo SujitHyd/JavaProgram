@@ -1,0 +1,23 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    public static void main(String[] args) {
+        String str = "I have Automation Command";
+        System.out.println(str.length());
+        System.out.println(str.indexOf('a'));//first
+        System.out.println(str.indexOf('a',str.indexOf('a')+1));//second
+        System.out.println(str.indexOf('a',str.indexOf('a',str.indexOf('a')+1)+1));//third
+        System.out.println("_______________________");
+        String test = "Puja;QA;Banglore;SDET;IBM";
+        String[] t = test.split(";");
+        //System.out.println(Arrays.toString(t));
+        for(String s : t){
+            System.out.println(s);
+        }
+        System.out.println("_______________________");
+        String t1 = "Puja.QA.Banglore.SDET.IBM";
+        String[] data = t1.split("\\.");
+        System.out.println(data[0]);
+    }
+}

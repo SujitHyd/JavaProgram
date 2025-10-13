@@ -1,0 +1,22 @@
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+        long value = 68768734786734L;
+        int even_count=0,odd_count=0,even_sum=0,odd_sum=0;
+        while(value>0){
+         int digit = (int) (value%10);
+         if ( digit% 2 == 0){
+             even_count++;
+             even_sum = even_sum+digit;
+         }
+         else{
+             odd_count++;
+             odd_sum = odd_sum + digit;
+         }
+         value=value/10;
+        }
+        System.out.println("Num of even digit : " + even_count + " and sum : " + even_sum);
+        System.out.println("Num of odd digit : " + odd_count + " and sum : " + odd_sum);
+        
+    }
+}
